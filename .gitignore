@@ -10,3 +10,8 @@ obj/
 .vs/
 .vscode/
 
+
+# Local Asset Scraps and Design Logs
+Assetts/Sprites/PNG/SD/Scraps/
+*.docx
+android/
