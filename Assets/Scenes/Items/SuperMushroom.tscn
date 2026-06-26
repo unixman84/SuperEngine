@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bjml0b2fanafr"]
+
+[ext_resource type="Texture2D" uid="uid://40f0us20vsf6" path="res://Assets/Sprites/PNG/SD/Items/SMWPP_Items.png" id="1_e6saw"]
+[ext_resource type="Script" uid="uid://c67o2t8qugcpg" path="res://Assets/Scripts/Items/Mushroom/SuperMushroom.cs" id="1_ppe5n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppe5n"]
+atlas = ExtResource("1_e6saw")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tsmb8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppe5n")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppe5n"]
+size = Vector2(10, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cv5hd"]
+
+[sub_resource type="Animation" id="Animation_3l8ux"]
+resource_name = "Be"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fhecx"]
+_data = {
+&"Be": SubResource("Animation_3l8ux")
+}
+
+[node name="SuperMushroom" type="CharacterBody2D" unique_id=715420927]
+light_mask = 3
+visibility_layer = 3
+z_index = 1
+script = ExtResource("1_ppe5n")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1056982868]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_tsmb8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=887993808]
+shape = SubResource("RectangleShape2D_ppe5n")
+
+[node name="CollectionArea" type="Area2D" parent="." unique_id=1079371174]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectionArea" unique_id=522510747]
+visible = false
+shape = SubResource("RectangleShape2D_cv5hd")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=356359918]
+libraries/ = SubResource("AnimationLibrary_fhecx")
+
+[connection signal="body_entered" from="CollectionArea" to="." method="_on_collection_area_body_entered"]

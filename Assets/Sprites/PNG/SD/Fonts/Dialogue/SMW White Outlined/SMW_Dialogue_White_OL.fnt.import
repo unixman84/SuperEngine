@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://xhuycqg61gc7"
+path="res://.godot/imported/SMW_Dialogue_White_OL.fnt-e59da0b306e9c4507628440dee23fa4f.fontdata"
+
+[deps]
+
+source_file="res://Assets/Sprites/PNG/SD/Fonts/Dialogue/SMW White Outlined/SMW_Dialogue_White_OL.fnt"
+dest_files=["res://.godot/imported/SMW_Dialogue_White_OL.fnt-e59da0b306e9c4507628440dee23fa4f.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=0

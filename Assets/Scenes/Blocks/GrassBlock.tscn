@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://ley00d6umoht"]
+
+[ext_resource type="Script" uid="uid://bhd1neta6oow5" path="res://Assets/Scripts/Blocks/GrassBlock.cs" id="1_hfcew"]
+[ext_resource type="PackedScene" uid="uid://bjml0b2fanafr" path="res://Assets/Scenes/Items/SuperMushroom.tscn" id="2_db5qa"]
+[ext_resource type="Texture2D" uid="uid://by20mjjgs6d83" path="res://Assets/Sprites/PNG/SD/Blocks/SMW_ItemBlock.png" id="3_xdn1q"]
+[ext_resource type="Texture2D" uid="uid://vkjvm3fa2hs0" path="res://Assets/Sprites/PNG/SD/Blocks/SMB2_ItemGrass.png" id="4_bucw7"]
+[ext_resource type="AudioStream" uid="uid://cx0nm3r7lvme4" path="res://Assets/Sounds/SMB2_Pickup.ogg" id="5_t5dr0"]
+[ext_resource type="AudioStream" uid="uid://dfsx2a3fdjgys" path="res://Assets/Sounds/SMB2_Throw.ogg" id="6_bimo8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ssuf"]
+atlas = ExtResource("3_xdn1q")
+region = Rect2(256, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ao6a"]
+atlas = ExtResource("4_bucw7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ekujo"]
+atlas = ExtResource("4_bucw7")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4l1j"]
+atlas = ExtResource("4_bucw7")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38h1x"]
+atlas = ExtResource("4_bucw7")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8to6m"]
+atlas = ExtResource("4_bucw7")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3x3pc"]
+atlas = ExtResource("4_bucw7")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_huvt3"]
+atlas = ExtResource("4_bucw7")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6mct"]
+atlas = ExtResource("4_bucw7")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ygn55"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ssuf")
+}],
+"loop": 1,
+"name": &"block_empty",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ao6a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ekujo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4l1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38h1x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8to6m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3x3pc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_huvt3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6mct")
+}],
+"loop": 1,
+"name": &"block_full",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pumko"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvkkq"]
+size = Vector2(14, 2)
+
+[node name="GrassBlock" type="StaticBody2D" unique_id=2004600304]
+script = ExtResource("1_hfcew")
+PullRewardScene = ExtResource("2_db5qa")
+
+[node name="Sprites" type="AnimatedSprite2D" parent="." unique_id=1527423529]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ygn55")
+animation = &"block_full"
+frame_progress = 0.7026726
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1985612499]
+shape = SubResource("RectangleShape2D_pumko")
+disabled = true
+
+[node name="PickDetector" type="Area2D" parent="." unique_id=697231618]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PickDetector" unique_id=1030272915]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_kvkkq")
+
+[node name="Pick" type="AudioStreamPlayer" parent="." unique_id=274824677]
+stream = ExtResource("5_t5dr0")
+
+[node name="Throw" type="AudioStreamPlayer" parent="." unique_id=272750542]
+stream = ExtResource("6_bimo8")

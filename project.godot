@@ -28,6 +28,21 @@ window/stretch/scale_mode="integer"
 
 project/assembly_name="Super Engine"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Assets/Dialogue/": "blue",
+"res://Assets/Game Log/": "gray",
+"res://Assets/Misc/": "gray",
+"res://Assets/Scenes/": "purple",
+"res://Assets/Scripts/": "red",
+"res://Assets/Sounds/": "pink",
+"res://Assets/Sprites/": "green",
+"res://addons/": "gray",
+"res://android/": "gray"
+}
+
 [gui]
 
 theme/custom_font="uid://xhuycqg61gc7"
