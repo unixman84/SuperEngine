@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dju7y73sopk7a"]
+
+[ext_resource type="Texture2D" uid="uid://o3cyko3745yg" path="res://Assetts/Sprites/PNG/SD/Pipes/SMW_Fixed.png" id="1_axmep"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b1aj7"]
+size = Vector2(32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msjf6"]
+atlas = ExtResource("1_axmep")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_677f1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msjf6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1730445865]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1404137698]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_b1aj7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2013922555]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_677f1")
+offset = Vector2(0, -8)

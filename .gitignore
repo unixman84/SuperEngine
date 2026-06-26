@@ -1,0 +1,12 @@
+# Godot-specific ignores
+.godot/
+*.tmp
+export_presets.cfg
+
+# .NET / C# builds and caches
+bin/
+obj/
+.mono/
+.vs/
+.vscode/
+

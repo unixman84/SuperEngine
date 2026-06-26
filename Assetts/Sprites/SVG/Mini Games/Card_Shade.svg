@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="32"
+   height="48"
+   viewBox="0 0 32 48"
+   sodipodi:docname="Card_Shade.svg"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="39.229167"
+     inkscape:cx="15.995751"
+     inkscape:cy="24"
+     inkscape:window-width="3840"
+     inkscape:window-height="2091"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     id="path9"
+     style="display:inline;fill:#200060;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none;paint-order:markers fill stroke"
+     d="M 7,8 C 5.892,8 5,8.892 5,10 v 28 c 0,1.108 0.892,2 2,2 h 18 c 1.108,0 2,-0.892 2,-2 V 10 C 27,8.892 26.108,8 25,8 Z"
+     inkscape:label="Card" />
+  <image
+     width="32"
+     height="48"
+     preserveAspectRatio="none"
+     style="display:none;image-rendering:optimizeSpeed"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAwCAYAAABwrHhvAAAAAXNSR0IB2cksfwAAAARnQU1BAACx&#10;jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dE&#10;APgA6ACo/vsKIQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAAd0SU1FB+oCDAkjLMi9XpEAAAFcSURB&#10;VFjD7VchssIwEH38qegRkMhIJEdA/iNEVv6jICt7BCRHQCIjK/8R4kBAOpvSJJvQhhnIU+1mkn19&#10;+2abBQoKCr4dK9eC1vo6Z6K6rldsAnMn95Gogrv+G+jTGfV+dyf3eObGsG7jSzAoMEo+rMfGHiSm&#10;FPjxsaNfNkcsSQF6IADrK7mxZAVyIFgCKieVNCa2mAlV2wEARCPzm9AkBwDVdnlNSJNTGCUWNaEr&#10;eWhtFhP2vQoe2PcqyoReAuP2SqUWjYRSdoy+u/Ymm3BK3t+DnZSWgmvCoAJPhmKS4Oxlm9BlruNf&#10;N5BINSTLhD4YEqlnsEzogxBuEhwTehuR7rbOxmPqLsT0u9Wi5cXZiNidMLbJiEayOmHFPXCzEZac&#10;Y0ImIcc3yZ0whCy/41ApqPSc33HF7YSGhCmF61Y8uVeWO+Gn3gkXH0ywbl8eTF4bzTIMp28fzwsK&#10;CgputsWWeZXMFbwAAAAASUVORK5CYII=&#10;"
+     id="image1" />
+</svg>
